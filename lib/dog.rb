@@ -13,12 +13,12 @@ class Dog
   
   def self.print_all
     @@all.each do |dog|
-      puts dog
+      puts dog.name
     end
   end
   
   def save
-    @@all << @name
+    @@all << self
   end
   
   def name
